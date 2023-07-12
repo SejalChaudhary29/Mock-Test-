@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Mnipulation</title>
+</head>
+<style>
+    .red{
+        background-color: red;
+        width: 300px;
+        height: 300px;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 100px;
+    }
+
+</style>
+<body>
+    
+    <div class="red" id="color"> RED</div>
+    <script>
+        const color = document.getElementById('color');
+        color.addEventListener('click' , function(){
+    color.style.backgroundColor = 'yellow'
+    color.style.width = '600px'
+    color.style.height = '600px'
+
+})
+    </script>
+</body>
+</html>
